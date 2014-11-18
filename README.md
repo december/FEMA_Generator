@@ -98,7 +98,7 @@ description: A data generater for FEMA.
 ### tucker.m
 
   * **Function** : Generate a tensor describing a behavior model with specified parmeters using makecore.m and makepm.m. 
-  * **Usage** : function [x, y, A1, A2, A3] = tucker(d, lg, lgc, mx, mn, t, dr, ndr, rate, noise);
+  * **Usage** : function [x, y, A1, A2, A3] = tucker(d, lg, lgc, mx, mn, t, dr, ndr, rate, noise, fileName, saveall);
   * **Parameters** :  
 
 		% d   : the number of dimension
@@ -111,6 +111,8 @@ description: A data generater for FEMA.
 		% ndr : the random range of nondiagonal elements in projection matrix
 		% rate : the rate of non-zero nondiagonal elements in core tensor
 		% noise : the max possible value of nondiagonal elements in core tensor
+		% fileName : the file's name where the result saved
+		% saveall : whether save all the infomation
 
   * **Return** : 
 
@@ -130,7 +132,6 @@ description: A data generater for FEMA.
 
 ### TO DO LIST
 
-  * Read data from files and write result into files.
   * Practice FEMA and compare the efficiency and error.
   * Data visualization.
 
